@@ -1,0 +1,6 @@
+[submodule ".config/suckless"]
+	path = .config/suckless
+	url = https://github.com/Fennrii/suckless
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/Fennrii/nvim
