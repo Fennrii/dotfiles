@@ -1,54 +1,86 @@
 [env]
 TERM = "xterm-256color"
 
+[colors]
+draw_bold_text_with_bright_colors = false
+
 [colors.bright]
-black = "0x888888"
-blue = "0x9a9a9a"
-cyan = "0x818181"
-green = "0xaeaeae"
-magenta = "0x5b5b5b"
-red = "0x555555"
-white = "0xffffff"
-yellow = "0xc1c1c1"
+black = "#aeaeae"
+blue = "#a4a4a4"
+cyan = "#333333"
+green = "#c2c2c2"
+magenta = "#909090"
+red = "#727272"
+white = "#868686"
+yellow = "#b8b8b8"
 
 [colors.normal]
-black = "0x252525"
-blue = "0x848484"
-cyan = "0x979797"
-green = "0x9b9b9b"
-magenta = "0x6d6d6d"
-red = "0x424242"
-white = "0xfcfcfc"
-yellow = "0x878787"
+black = "#cccccc"
+blue = "#4a4a4a"
+cyan = "#545454"
+green = "#5e5e5e"
+magenta = "#474747"
+red = "#7c7c7c"
+white = "#9a9a9a"
+yellow = "#686868"
 
 [colors.primary]
-background = "0x262626"
-foreground = "0xc6c6c6"
+background = "#cccccc"
+foreground = "#9a9a9a"
 
-# Faded colours
+
+
+### Greyscale colours
 # [colors.bright]
-# black = "0x343434"
-# blue = "0xc9e6fd"
-# cyan = "0xddfcf8"
-# green = "0xeff6ab"
-# magenta = "0xf7d7ff"
-# red = "0xffc4c4"
-# white = "0xb5b5b5"
-# yellow = "0xffe6b5"
+# black = "#888888"
+# blue = "#9a9a9a"
+# cyan = "#818181"
+# green = "#aeaeae"
+# magenta = "#5b5b5b"
+# red = "#555555"
+# white = "#ffffff"
+# yellow = "#c1c1c1"
 #
 # [colors.normal]
-# black = "0x262626"
-# blue = "0x8abae1"
-# cyan = "0xabebe2"
-# green = "0xc9d36a"
-# magenta = "0xdb9fe9"
-# red = "0xec8989"
-# white = "0xc6c6c6"
-# yellow = "0xceb581"
+# black = "#252525"
+# blue = "#848484"
+# cyan = "#979797"
+# green = "#9b9b9b"
+# magenta = "#6d6d6d"
+# red = "#424242"
+# white = "#fcfcfc"
+# yellow = "#878787"
 #
 # [colors.primary]
-# background = "0x262626"
-# foreground = "0xc6c6c6"
+# background = "#262626"
+# foreground = "#c6c6c6"
+
+
+#### Normal colours
+# Faded colours
+# [colors.bright]
+# black = "#343434"
+# blue = "#c9e6fd"
+# cyan = "#ddfcf8"
+# green = "#eff6ab"
+# magenta = "#f7d7ff"
+# red = "#ffc4c4"
+# white = "#b5b5b5"
+# yellow = "#ffe6b5"
+#
+# [colors.normal]
+# black = "#262626"
+# blue = "#8abae1"
+# cyan = "#abebe2"
+# green = "#c9d36a"
+# magenta = "#db9fe9"
+# red = "#ec8989"
+# white = "#c6c6c6"
+# yellow = "#ceb581"
+#
+# [colors.primary]
+# background = "#262626"
+# foreground = "#c6c6c6"
 #
 [font]
 size = 12.0
