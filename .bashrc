@@ -30,7 +30,7 @@ alias ms='source $HOME/.bashrc'
 alias ff='fastfetch'
 # fastfetch
 
-export PATH=$PATH:/opt/gradle/gradle-8.12.1/bin:/home/andrew/Documents/aseprite/aseprite-release/bin/
+export PATH=$PATH:/opt/gradle/gradle-8.12.1/bin:$HOME/Documents/aseprite/aseprite-release/bin/
 
 
 export FZF_COMPLETION_TRIGGER='*'
