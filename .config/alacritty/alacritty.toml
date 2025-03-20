@@ -4,55 +4,55 @@ TERM = "xterm-256color"
 [colors]
 draw_bold_text_with_bright_colors = false
 
-### Dark mode
-[colors.normal]
-black = "#333333"
-red = "#868686"
-green = "#a4a4a4"
-yellow = "#9a9a9a"
-blue = "#b8b8b8"
-magenta = "#c2c2c2"
-cyan = "#aeaeae"
-white = "#686868"
-
-[colors.bright]
-black = "#545454"
-red = "#909090"
-green = "#474747"
-yellow = "#4a4a4a"
-blue = "#5e5e5e"
-magenta = "#727272"
-cyan = "#cccccc"
-white = "#7c7c7c"
-
-[colors.primary]
-background = "#333333"
-foreground = "#9a9a9a"
-
-### Light mode
-# [colors.bright]
-# black = "#aeaeae"
-# blue = "#a4a4a4"
-# cyan = "#333333"
-# green = "#c2c2c2"
-# magenta = "#909090"
-# red = "#727272"
-# white = "#868686"
-# yellow = "#b8b8b8"
-#
+# ### Dark mode
 # [colors.normal]
-# black = "#cccccc"
-# blue = "#4a4a4a"
-# cyan = "#545454"
-# green = "#5e5e5e"
-# magenta = "#474747"
-# red = "#7c7c7c"
-# white = "#9a9a9a"
-# yellow = "#686868"
+# black = "#333333"
+# red = "#868686"
+# green = "#a4a4a4"
+# yellow = "#9a9a9a"
+# blue = "#b8b8b8"
+# magenta = "#c2c2c2"
+# cyan = "#aeaeae"
+# white = "#686868"
+#
+# [colors.bright]
+# black = "#545454"
+# red = "#909090"
+# green = "#474747"
+# yellow = "#4a4a4a"
+# blue = "#5e5e5e"
+# magenta = "#727272"
+# cyan = "#cccccc"
+# white = "#7c7c7c"
 #
 # [colors.primary]
-# background = "#cccccc"
+# background = "#333333"
 # foreground = "#9a9a9a"
+
+### Light mode
+[colors.bright]
+black = "#aeaeae"
+blue = "#a4a4a4"
+cyan = "#333333"
+green = "#c2c2c2"
+magenta = "#909090"
+red = "#727272"
+white = "#868686"
+yellow = "#b8b8b8"
+
+[colors.normal]
+black = "#cccccc"
+blue = "#4a4a4a"
+cyan = "#545454"
+green = "#5e5e5e"
+magenta = "#474747"
+red = "#7c7c7c"
+white = "#9a9a9a"
+yellow = "#686868"
+
+[colors.primary]
+background = "#cccccc"
+foreground = "#9a9a9a"
 
 ### Greyscale colours
 # [colors.bright]
