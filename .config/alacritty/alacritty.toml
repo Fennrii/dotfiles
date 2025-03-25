@@ -110,5 +110,5 @@ foreground = "#9a9a9a"
 size = 12.0
 
 [font.normal]
-family = "MesloLGMDZ Nerd Font Mono"
+family = "DroidSansMNerdFont"
 style = "Regular"

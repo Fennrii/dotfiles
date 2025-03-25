@@ -8,7 +8,7 @@ fi
 
 # Enable color support for ls and add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    eval "$(dircolors -b ~/.dircolors)"
+    # eval "$(dircolors -b ~/.dircolors)"
     alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
@@ -27,14 +27,18 @@ alias suvim='sudo -E -s nvim'
 alias cdwm='cd $HOME/.config/suckless/dwm/'
 alias ve='[ -d ./venv/ ]; source ./venv/bin/activate'
 alias ms='source $HOME/.bashrc'
+alias cdg='cd /mnt/encrypted/git'
 alias ff='fastfetch'
 # fastfetch
 
-export PATH=$PATH:/opt/gradle/gradle-8.12.1/bin:$HOME/Documents/aseprite/aseprite-release/bin/
-
+export PATH=$PATH:/opt/gradle/gradle-8.12.1/bin
+export PATH=$PATH:$HOME/Documents/aseprite/aseprite-release/bin/
+export PATH=$PATH:/opt/nvim-linux-x86_64/bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 export FZF_COMPLETION_TRIGGER='*'
 export FZF_COMPLETION_OPTS='--border --info=inline'
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 . "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
