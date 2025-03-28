@@ -29,30 +29,73 @@ draw_bold_text_with_bright_colors = false
 # background = "#333333"
 # foreground = "#9a9a9a"
 
-### Light mode
-[colors.bright]
-black = "#aeaeae"
-blue = "#a4a4a4"
-cyan = "#333333"
-green = "#c2c2c2"
-magenta = "#909090"
-red = "#727272"
-white = "#868686"
-yellow = "#b8b8b8"
+# ### Light mode
+# [colors.bright]
+# black = "#aeaeae"
+# blue = "#a4a4a4"
+# cyan = "#333333"
+# green = "#c2c2c2"
+# magenta = "#909090"
+# red = "#727272"
+# white = "#868686"
+# yellow = "#b8b8b8"
+#
+# [colors.normal]
+# black = "#cccccc"
+# blue = "#4a4a4a"
+# cyan = "#545454"
+# green = "#5e5e5e"
+# magenta = "#474747"
+# red = "#7c7c7c"
+# white = "#9a9a9a"
+# yellow = "#686868"
+#
+# [colors.primary]
+# background = "#cccccc"
+# foreground = "#9a9a9a"
 
-[colors.normal]
-black = "#cccccc"
-blue = "#4a4a4a"
-cyan = "#545454"
-green = "#5e5e5e"
-magenta = "#474747"
-red = "#7c7c7c"
-white = "#9a9a9a"
-yellow = "#686868"
 
 [colors.primary]
-background = "#cccccc"
-foreground = "#9a9a9a"
+background = "#DAD4BB"
+foreground = "#787466"
+
+[colors.cursor]
+text = "#DAD4BB"
+cursor = "#B26F5F"
+
+[colors.selection]
+text = "#DAD4BB"
+background = "#5E6666"
+
+[colors.normal]
+black = "#787466"
+red = "#CD664D"
+green = "#727B59"
+yellow = "#3BA99F"
+blue = "#5E6666"
+magenta = "#50403C"
+cyan = "#4E4C43"
+white = "#B9B49F"
+
+[colors.bright]
+black = "#898474"
+red = "#D07C63"
+green = "#878D6D"
+yellow = "#5BB2A5"
+blue = "#777C77"
+magenta = "#6C5E55"
+cyan = "#6A675B"
+white = "#CAC4AD"
+
+[colors.dim]
+black = "#686458"
+red = "#B9664F"
+green = "#707659"
+yellow = "#449B91"
+blue = "#606663"
+magenta = "#554742"
+cyan = "#535147"
+white = "#A9A491"
 
 ### Greyscale colours
 # [colors.bright]
