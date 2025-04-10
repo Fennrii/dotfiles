@@ -36,6 +36,10 @@ export PATH=$PATH:$HOME/Documents/aseprite/aseprite-release/bin/
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:$HOME/.cargo/bin
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
 export FZF_COMPLETION_TRIGGER='*'
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
