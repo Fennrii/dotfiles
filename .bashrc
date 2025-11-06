@@ -86,7 +86,6 @@ PS1='\[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h \[\e[35m\]\w\[\e[m\]\$ '
 
 # Set alias for using vim
 alias vim='nvim'
-alias vi='nvim'
 alias suvim='sudo -E -s nvim'
 alias cdwm='cd $HOME/.config/suckless/dwm/'
 alias ve='[ -d ./venv/ ]; source ./venv/bin/activate'
