@@ -153,5 +153,5 @@ white = "#A9A491"
 size = 12.0
 
 [font.normal]
-family = "DroidSansMNerdFont"
+family = "Noto Sans Mono"
 style = "Regular"
