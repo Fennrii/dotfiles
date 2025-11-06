@@ -1,0 +1,15 @@
+*
+!alacritty
+!nvim
+!suckless
+!lazygit
+!installers
+!updaters
+!.gitignore
+!README.md
+!LICENSE
+!submodule_fix.sh
+!.bashrc
+!.xinitrc
+!.dircolors
+!Makefile
