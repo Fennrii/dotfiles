@@ -1,8 +1,8 @@
 *
-!alacritty
-!nvim
-!suckless
-!lazygit
+!.config/alacritty
+!.config/nvim
+!.config/suckless
+!.config/lazygit
 !installers
 !updaters
 !.gitignore
