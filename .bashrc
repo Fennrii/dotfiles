@@ -97,16 +97,16 @@ alias ff='fastfetch'
 export PATH=$PATH:/opt/gradle/gradle-8.12.1/bin
 export PATH=$PATH:$HOME/Documents/aseprite/aseprite-release/bin/
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
-export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/.local/bin
 
 
 export FZF_COMPLETION_TRIGGER='*'
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
-. "$HOME/.cargo/env"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 BROWSER="bin/waterfox"
 HISTFILE=~/.history
 alias clang="clang -std=c99 -Wall -Werror"
+alias cds="cd $HOME/.config/suckless"
+alias xin="sudo xbps-install"
