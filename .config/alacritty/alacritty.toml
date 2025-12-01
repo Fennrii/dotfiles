@@ -54,48 +54,92 @@ draw_bold_text_with_bright_colors = false
 # background = "#cccccc"
 # foreground = "#9a9a9a"
 
+### Light nier theme
+# [colors.primary]
+# background = "#DAD4BB"
+# foreground = "#787466"
+#
+# [colors.cursor]
+# text = "#DAD4BB"
+# cursor = "#B26F5F"
+#
+# [colors.selection]
+# text = "#DAD4BB"
+# background = "#5E6666"
+#
+# [colors.normal]
+# black = "#787466"
+# red = "#CD664D"
+# green = "#727B59"
+# yellow = "#3BA99F"
+# blue = "#5E6666"
+# magenta = "#50403C"
+# cyan = "#4E4C43"
+# white = "#B9B49F"
+#
+# [colors.bright]
+# black = "#898474"
+# red = "#D07C63"
+# green = "#878D6D"
+# yellow = "#5BB2A5"
+# blue = "#777C77"
+# magenta = "#6C5E55"
+# cyan = "#6A675B"
+# white = "#CAC4AD"
+#
+# [colors.dim]
+# black = "#686458"
+# red = "#B9664F"
+# green = "#707659"
+# yellow = "#449B91"
+# blue = "#606663"
+# magenta = "#554742"
+# cyan = "#535147"
+# white = "#A9A491"
 
+### Dark Nier theme
 [colors.primary]
-background = "#DAD4BB"
-foreground = "#787466"
+background = "#4E4C43"  # was normal.cyan – now dark background
+foreground = "#DAD4BB"  # was light background – now main text
 
 [colors.cursor]
-text = "#DAD4BB"
-cursor = "#B26F5F"
+text = "#4E4C43"        # match background
+cursor = "#B26F5F"      # same cursor color as before
 
 [colors.selection]
 text = "#DAD4BB"
 background = "#5E6666"
 
 [colors.normal]
-black = "#787466"
-red = "#CD664D"
-green = "#727B59"
-yellow = "#3BA99F"
-blue = "#5E6666"
+black   = "#787466"
+red     = "#CD664D"
+green   = "#727B59"
+yellow  = "#3BA99F"
+blue    = "#5E6666"
 magenta = "#50403C"
-cyan = "#4E4C43"
-white = "#B9B49F"
+cyan    = "#4E4C43"
+white   = "#B9B49F"
 
 [colors.bright]
-black = "#898474"
-red = "#D07C63"
-green = "#878D6D"
-yellow = "#5BB2A5"
-blue = "#777C77"
+black   = "#898474"
+red     = "#D07C63"
+green   = "#878D6D"
+yellow  = "#5BB2A5"
+blue    = "#777C77"
 magenta = "#6C5E55"
-cyan = "#6A675B"
-white = "#CAC4AD"
+cyan    = "#6A675B"
+white   = "#CAC4AD"
 
 [colors.dim]
-black = "#686458"
-red = "#B9664F"
-green = "#707659"
-yellow = "#449B91"
-blue = "#606663"
+black   = "#686458"
+red     = "#B9664F"
+green   = "#707659"
+yellow  = "#449B91"
+blue    = "#606663"
 magenta = "#554742"
-cyan = "#535147"
-white = "#A9A491"
+cyan    = "#535147"
+white   = "#A9A491"
+
 
 ### Greyscale colours
 # [colors.bright]

@@ -8,7 +8,7 @@ fi
 
 # Enable color support for ls and add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    # eval "$(dircolors -b ~/.dircolors)"
+    eval "$(dircolors -b ~/.dircolors)"
     alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
@@ -79,11 +79,52 @@ fugrep() {
   done
 }
 
+short_pwd() {
+  local full="$PWD"
+
+  # Preserve ~ when inside home
+  if [[ "$full" == "$HOME"* ]]; then
+    local rel="${full#$HOME}"
+    [ -z "$rel" ] && { printf "~"; return; }   # exactly at $HOME
+    full="~$rel"
+  fi
+
+  local base="${full##*/}"          # full current directory
+  local parent="${full%/*}"         # parent path
+
+  # If parent is ~, just print ~/current
+  if [[ "$parent" == "~" ]]; then
+    printf "~/%s" "$base"
+    return
+  fi
+
+  local out=""
+  IFS='/' read -ra parts <<< "$parent"
+
+  for p in "${parts[@]}"; do
+    [ -z "$p" ] && continue
+
+    # Keep ~ intact
+    if [[ "$p" == "~" ]]; then
+      out+="~"
+    else
+      local plen=${#p}
+      # keep_len = max(3, ceil(plen/2) + 1)
+      local keep_len=$(( (plen + 1) / 2 + 1 ))
+      (( keep_len < 3 )) && keep_len=3
+      out+="/${p:0:$keep_len}"
+    fi
+  done
+
+  printf "%s/%s" "$out" "$base"
+}
+
+export PS1='\[\e[38;5;187m\]\u\[\e[m\]@\[\e[38;5;145m\]\h \[\e[38;5;174m\]$(short_pwd)\[\e[m\]\$ '
 
 
-# Set color for user and current directory
-PS1='\[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h \[\e[35m\]\w\[\e[m\]\$ '
-
+# # Set color for user and current directory
+# PS1='\[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h \[\e[35m\]\w\[\e[m\]\$ '
+ 
 # Set alias for using vim
 alias vim='nvim'
 alias suvim='sudo -E -s nvim'
@@ -110,3 +151,7 @@ HISTFILE=~/.history
 alias clang="clang -std=c99 -Wall -Werror"
 alias cds="cd $HOME/.config/suckless"
 alias xin="sudo xbps-install"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
