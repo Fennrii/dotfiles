@@ -132,6 +132,7 @@ alias cdwm='cd $HOME/.config/suckless/dwm/'
 alias ve='[ -d ./venv/ ]; source ./venv/bin/activate'
 alias ms='source $HOME/.bashrc'
 alias cdg='cd /mnt/encrypted/git'
+alias cdp='cd /mnt/encrypted/personal/'
 alias ff='fastfetch'
 # fastfetch
 
@@ -148,7 +149,7 @@ export FZF_COMPLETION_OPTS='--border --info=inline'
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 BROWSER="bin/waterfox"
 HISTFILE=~/.history
-alias clang="clang -std=c99 -Wall -Werror"
+alias clang="clang -std=c99 -Wall"
 alias cds="cd $HOME/.config/suckless"
 alias xin="sudo xbps-install"
 
