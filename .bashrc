@@ -150,7 +150,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 BROWSER="bin/waterfox"
 HISTFILE=~/.history
-alias clang="clang -std=c99 -Wall"
+alias clang="clang -std=c89 -Wall"
 alias cds="cd $HOME/.config/suckless"
 alias xin="sudo xbps-install"
 
