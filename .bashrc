@@ -136,14 +136,15 @@ alias cdp='cd /mnt/encrypted/personal/'
 alias ff='fastfetch'
 # fastfetch
 
-export PATH=$PATH:/opt/gradle/gradle-8.12.1/bin
-export PATH=$PATH:$HOME/Documents/aseprite/aseprite-release/bin/
+# export PATH=$PATH:/opt/gradle/gradle-8.12.1/bin
+# export PATH=$PATH:$HOME/Documents/aseprite/aseprite-release/bin/
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:$HOME/.local/bin
 
 
 export FZF_COMPLETION_TRIGGER='*'
 export FZF_COMPLETION_OPTS='--border --info=inline'
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
