@@ -1,21 +1,28 @@
+CRYPT_NAME := crypt
+MOUNTPOINT := /mnt/encrypted
+LUKS_UUID := ec5f4902-ca0b-4853-9117-4556196cf8c3
+
+LUKS_DEV := /dev/disk/by-uuid/$(LUKS_UUID)
+
 connect: decrypt mounte
 
 disconnect: umount encrypt
 
 decrypt:
-	sudo cryptsetup luksOpen /dev/sdb1 crypt
+	sudo cryptsetup luksOpen $(LUKS_DEV) $(CRYPT_NAME)
 
 mounte:
-	sudo mount /dev/mapper/crypt /mnt/encrypted/
+	sudo mount /dev/mapper/$(CRYPT_NAME) $(MOUNTPOINT)
 
 mount:
-	sudo mount /dev/sdb1 /mnt/encrypted/
+	sudo mount $(LUKS_DEV) $(MOUNTPOINT)
 
 umount:
-	sudo umount /mnt/encrypted/
+	sudo umount $(MOUNTPOINT)
 
 encrypt:
-	sudo cryptsetup luksClose crypt
+	sleep 1
+	sudo cryptsetup luksClose $(CRYPT_NAME)
 
 work:
 	autorandr -l work
