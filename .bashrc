@@ -150,10 +150,13 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 BROWSER="bin/waterfox"
 HISTFILE=~/.history
-alias clang="clang -std=c89 -Wall"
+alias clangc="clang -std=c89 -Wall -Werror -lm"
 alias cds="cd $HOME/.config/suckless"
 alias xin="sudo xbps-install"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# opencode
+export PATH=/home/fennrir/.opencode/bin:$PATH
